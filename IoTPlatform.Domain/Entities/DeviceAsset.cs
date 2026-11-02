@@ -105,4 +105,34 @@ public class DeviceAsset
 
         Status = newStatus;
     }
+
+    /// <summary>
+    /// Gets the collection of telemetry metrics associated with the device asset.
+    /// </summary>
+    public ICollection<TelemetryMetric> TelemetryMetrics
+    {
+        get;
+        private set;
+    }
+        = new List<TelemetryMetric>();
+
+    /// <summary>
+    /// Gets the collection of alert rules associated with the device asset.
+    /// </summary>
+    public ICollection<AlertRule> AlertRules
+    {
+        get;
+        private set;
+    }
+        = new List<AlertRule>();
+
+    /// <summary>
+    /// Gets the collection of maintenance logs associated with the device asset.
+    /// </summary>
+    public ICollection<MaintenanceLog> MaintenanceLogs
+    {
+        get;
+        private set;
+    }
+        = new List<MaintenanceLog>();
 }

@@ -83,4 +83,9 @@ public class AlertRule
             throw new DomainException("Minimum value must be less than maximum value.");
         }
     }
+
+    /// <summary>
+    /// Gets the device asset associated with this alert rule.
+    /// </summary>
+    public DeviceAsset? DeviceAsset { get; private set; }
 }

@@ -50,4 +50,9 @@ public class TelemetryMetric
         Value = value;
         Timestamp = DateTime.UtcNow;
     }
+
+    /// <summary>
+    /// Gets the device asset associated with this telemetry metric.
+    /// </summary>
+    public DeviceAsset? DeviceAsset { get; private set; }
 }

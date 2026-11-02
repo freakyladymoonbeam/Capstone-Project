@@ -16,3 +16,5 @@
 /workspaces/Capstone-Project/IoTPlatform.Infrastructure/obj/Debug/net10.0/refint/IoTPlatform.Infrastructure.dll
 /workspaces/Capstone-Project/IoTPlatform.Infrastructure/obj/Debug/net10.0/IoTPlatform.Infrastructure.pdb
 /workspaces/Capstone-Project/IoTPlatform.Infrastructure/obj/Debug/net10.0/ref/IoTPlatform.Infrastructure.dll
+/workspaces/Capstone-Project/IoTPlatform.Infrastructure/bin/Debug/net10.0/IoTPlatform.Infrastructure.runtimeconfig.json
+/workspaces/Capstone-Project/IoTPlatform.Infrastructure/obj/Debug/net10.0/IoTPlatform.Infrastructure.genruntimeconfig.cache
