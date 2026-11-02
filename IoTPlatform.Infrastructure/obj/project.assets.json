@@ -1,11 +1,49 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "IoTPlatform.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "IoTPlatform.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IoTPlatform.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IoTPlatform.Application.dll": {}
+        }
+      },
+      "IoTPlatform.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/IoTPlatform.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IoTPlatform.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "IoTPlatform.Application/1.0.0": {
+      "type": "project",
+      "path": "../IoTPlatform.Application/IoTPlatform.Application.csproj",
+      "msbuildProject": "../IoTPlatform.Application/IoTPlatform.Application.csproj"
+    },
+    "IoTPlatform.Domain/1.0.0": {
+      "type": "project",
+      "path": "../IoTPlatform.Domain/IoTPlatform.Domain.csproj",
+      "msbuildProject": "../IoTPlatform.Domain/IoTPlatform.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "IoTPlatform.Application >= 1.0.0",
+      "IoTPlatform.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/codespace/.nuget/packages/": {}
@@ -32,7 +70,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/workspaces/Capstone-Project/IoTPlatform.Application/IoTPlatform.Application.csproj": {
+              "projectPath": "/workspaces/Capstone-Project/IoTPlatform.Application/IoTPlatform.Application.csproj"
+            },
+            "/workspaces/Capstone-Project/IoTPlatform.Domain/IoTPlatform.Domain.csproj": {
+              "projectPath": "/workspaces/Capstone-Project/IoTPlatform.Domain/IoTPlatform.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
