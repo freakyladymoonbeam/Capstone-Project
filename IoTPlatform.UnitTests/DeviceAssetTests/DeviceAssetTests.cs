@@ -7,6 +7,9 @@ namespace IoTPlatform.UnitTests.DeviceAssetTests;
 [TestClass]
 public class DeviceAssetTests
 {
+    /// <summary>
+    /// Tests the constructor and status change behavior of the DeviceAsset class.
+    /// </summary>
     [TestMethod]
     public void Constructor_ValidSerialNumber_CreatesDevice()
     {
@@ -18,6 +21,9 @@ public class DeviceAssetTests
         Assert.AreEqual("DEV-12345", device.SerialNumber);
     }
 
+    /// <summary>
+    /// Tests the constructor of the DeviceAsset class with an invalid serial number.
+    /// </summary>
     [TestMethod]
     public void Constructor_InvalidSerialNumber_ThrowsException()
     {
@@ -36,6 +42,9 @@ public class DeviceAssetTests
         }
     }
 
+    /// <summary>
+    /// Tests changing the status of a registered device to active.
+    /// </summary>
     [TestMethod]
     public void ChangeStatus_RegisteredToActive_Succeeds()
     {
@@ -51,6 +60,9 @@ public class DeviceAssetTests
             device.Status);
     }
 
+    /// <summary>
+    /// Tests changing the status of a registered device to retired, which should throw an exception.
+    /// </summary>
     [TestMethod]
     public void ChangeStatus_RegisteredToRetired_ThrowsException()
     {

@@ -6,6 +6,9 @@ namespace IoTPlatform.UnitTests.AlertRuleTests;
 [TestClass]
 public class AlertRuleTests
 {
+    /// <summary>
+    /// Tests the constructor of the AlertRule class with a valid range.
+    /// </summary>
     [TestMethod]
     public void Constructor_ValidRange_CreatesRule()
     {
@@ -19,6 +22,9 @@ public class AlertRuleTests
         Assert.AreEqual(100, rule.MaxValue);
     }
 
+    /// <summary>
+    /// Tests the constructor of the AlertRule class with a negative minimum value.
+    /// </summary>
     [TestMethod]
     public void Constructor_NegativeMinimum_ThrowsException()
     {
@@ -38,6 +44,9 @@ public class AlertRuleTests
         }
     }
 
+    /// <summary>
+    /// Tests the constructor of the AlertRule class with a minimum value greater than the maximum value.
+    /// </summary>
     [TestMethod]
     public void Constructor_MinimumGreaterThanMaximum_ThrowsException()
     {
